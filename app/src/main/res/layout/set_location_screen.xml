@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:padding="@dimen/PaddingScreen"
+    tools:context=".SetLocationActivity">
+
+    <LinearLayout
+        android:id="@+id/set_location_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton style="@style/backButton" />
+
+
+        <TextView
+            style="@style/customTextView"
+            android:text="Set your location"
+            android:textColor="@color/secondary_black"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/set_location_desc_text"
+        style="@style/customTextView"
+        android:fontFamily="@font/cairo_regular"
+        android:text="This data will be displayed in your account profile for security"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/set_location_top_layout" />
+
+    <LinearLayout
+        android:id="@+id/take_photo_layout"
+        style="@style/customImageButton"
+        android:orientation="vertical"
+        android:padding="@dimen/PaddingScreen"
+        app:layout_constraintTop_toBottomOf="@+id/set_location_desc_text">
+
+        <ImageButton
+            style="@style/customSmallImageButton"
+            android:src="@drawable/ic_location" />
+
+        <TextView
+            style="@style/customTextView"
+            android:text="Set location"
+            android:textAlignment="center"
+            android:textColor="@color/secondary_black" />
+    </LinearLayout>
+
+    <Button
+        style="@style/customButton"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

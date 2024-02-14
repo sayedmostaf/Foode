@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:padding="@dimen/PaddingScreen"
+    tools:context=".CongratsActivity">
+
+    <Button
+        style="@style/customButton"
+        android:text="Go homepage"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/done_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_done"
+        app:layout_constraintBottom_toTopOf="@+id/congrats_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/congrats_text"
+        style="@style/customTextView"
+        android:text="Congrats!"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/customTextView"
+        android:text="Your profile is ready to use"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_black"
+        app:layout_constraintTop_toBottomOf="@+id/congrats_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

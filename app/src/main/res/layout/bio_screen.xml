@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:padding="@dimen/PaddingScreen"
+    tools:context=".BioActivity">
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton style="@style/backButton" />
+
+        <TextView
+            style="@style/customTextView"
+            android:text="Fill in your bio"
+            android:textColor="@color/secondary_black"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc_text"
+        style="@style/customTextView"
+        android:fontFamily="@font/cairo_regular"
+        android:text="This data will be displayed in your account profile for security"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/top_layout" />
+
+    <TextView
+        android:id="@+id/full_name_text"
+        style="@style/customTextView"
+        android:layout_width="wrap_content"
+        android:drawableRight="@drawable/ic_star"
+        android:text="Full Name"
+        app:layout_constraintTop_toBottomOf="@+id/desc_text" />
+
+    <EditText
+        android:id="@+id/full_name_field"
+        style="@style/customEditText"
+        android:hint="Full Name"
+        app:layout_constraintTop_toBottomOf="@+id/full_name_text" />
+
+    <TextView
+        android:id="@+id/nick_name_text"
+        style="@style/customTextView"
+        android:layout_width="wrap_content"
+        android:drawableRight="@drawable/ic_star"
+        android:text="Nick Name"
+        app:layout_constraintTop_toBottomOf="@+id/full_name_field" />
+
+    <EditText
+        android:id="@+id/nick_name_field"
+        style="@style/customEditText"
+        android:hint="Nick Name"
+        app:layout_constraintTop_toBottomOf="@+id/nick_name_text" />
+
+    <TextView
+        android:id="@+id/phone_text"
+        style="@style/customTextView"
+        android:layout_width="wrap_content"
+        android:drawableRight="@drawable/ic_star"
+        android:text="Phone Number"
+        app:layout_constraintTop_toBottomOf="@+id/nick_name_field" />
+
+    <EditText
+        android:id="@+id/phone_field"
+        style="@style/customEditText"
+        android:hint="Phone Number"
+        app:layout_constraintTop_toBottomOf="@+id/phone_text" />
+
+    <TextView
+        android:id="@+id/gender_text"
+        style="@style/customTextView"
+        android:layout_width="wrap_content"
+        android:drawableRight="@drawable/ic_star"
+        android:text="Gender"
+        app:layout_constraintTop_toBottomOf="@+id/phone_field" />
+
+    <EditText
+        android:id="@+id/gender_field"
+        style="@style/customEditText"
+        android:drawableRight="@drawable/ic_fill_arrow_down"
+        android:hint="Gender"
+        app:layout_constraintTop_toBottomOf="@+id/gender_text" />
+
+    <TextView
+        android:id="@+id/date_text"
+        style="@style/customTextView"
+        android:layout_width="wrap_content"
+        android:drawableRight="@drawable/ic_star"
+        android:text="Date of Birthday"
+        app:layout_constraintTop_toBottomOf="@+id/gender_field" />
+
+    <EditText
+        android:id="@+id/date_field"
+        style="@style/customEditText"
+        android:drawableRight="@drawable/ic_calender"
+        android:hint="Date of Birthday"
+        app:layout_constraintTop_toBottomOf="@+id/date_text" />
+
+    <TextView
+        android:id="@+id/address_text"
+        style="@style/customTextView"
+        android:layout_width="wrap_content"
+        android:drawableRight="@drawable/ic_star"
+        android:text="Address"
+        app:layout_constraintTop_toBottomOf="@+id/date_field" />
+
+    <EditText
+        android:id="@+id/address_field"
+        style="@style/customEditText"
+        android:hint="Address"
+        app:layout_constraintTop_toBottomOf="@+id/address_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/customButton"
+        android:layout_marginTop="15dp"
+        android:text="Next"
+        app:layout_constraintTop_toBottomOf="@+id/address_field" />
+</androidx.constraintlayout.widget.ConstraintLayout>

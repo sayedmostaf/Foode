@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/back_ground"
+    android:padding="@dimen/TextPadding"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/PaddingScreen">
+
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <TextView
+            style="@style/customTextView"
+            android:text="Foode"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/customTextView"
+            android:text="Sign in to your account"
+            android:textAlignment="center"
+            android:textColor="@color/secondary_black"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_width="wrap_content"
+            android:drawableRight="@drawable/ic_star"
+
+            android:text="Email" />
+
+        <EditText
+            style="@style/customEditText"
+            android:hint="Email or Phone Number"
+            android:inputType="text"
+            android:maxLength="50" />
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_width="wrap_content"
+            android:drawableRight="@drawable/ic_star"
+            android:text="Password" />
+
+        <EditText
+            style="@style/customEditText"
+            android:drawableRight="@drawable/ic_privicay"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="50" />
+
+        <CheckBox style="@style/customCheckBox" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/customButton"
+            android:text="Sign in" />
+
+        <TextView
+            style="@style/customTextView"
+            android:text="Forgot the password?"
+            android:textAlignment="center"
+            android:textColor="@color/primary" />
+
+        <TextView
+            style="@style/customTextView"
+            android:fontFamily="@font/cairo_semi_bold"
+            android:text="or continue with"
+            android:textAlignment="center"
+            android:textColor="#2C2B2B" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/TextPadding">
+
+            <TextView
+                style="@style/customTextView"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_widget_background"
+                android:drawableLeft="@drawable/ic_facebook"
+                android:elevation="2dp"
+                android:fontFamily="@font/cairo_semi_bold"
+                android:text="Facebook"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                style="@style/customTextView"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_widget_background"
+                android:drawableLeft="@drawable/ic_google"
+                android:elevation="2dp"
+                android:fontFamily="@font/cairo_semi_bold"
+                android:text="Google"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/customTextView"
+                android:layout_width="wrap_content"
+                android:text="Already have an account?"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+
+            <TextView
+                style="@style/customTextView"
+                android:text="Sign in"
+                android:textColor="@color/primary" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

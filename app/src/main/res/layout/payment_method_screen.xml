@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:padding="@dimen/PaddingScreen"
+    tools:context=".PaymentMethodActivity">
+
+    <LinearLayout
+        android:id="@+id/top_payment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton style="@style/backButton" />
+
+        <TextView
+            style="@style/customTextView"
+            android:text="Payment Method"
+            android:textColor="@color/secondary_black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desc_payment_text"
+        style="@style/customTextView"
+        android:fontFamily="@font/cairo_regular"
+        android:text="This data will be displayed in your account profile for security"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/top_payment_layout" />
+
+    <ImageButton
+        android:id="@+id/paypal_widget"
+        style="@style/customImageButton"
+        android:src="@drawable/ic_paypal"
+        app:layout_constraintTop_toBottomOf="@id/desc_payment_text" />
+
+    <ImageButton
+        android:id="@+id/visa_widget"
+        style="@style/customImageButton"
+        android:src="@drawable/ic_visa"
+        app:layout_constraintTop_toBottomOf="@id/paypal_widget" />
+
+    <ImageButton
+        android:id="@+id/payoneer_widget"
+        style="@style/customImageButton"
+        android:src="@drawable/ic_payoneer"
+        app:layout_constraintTop_toBottomOf="@id/visa_widget" />
+
+    <Button
+        style="@style/customButton"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

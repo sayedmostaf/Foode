@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:padding="@dimen/PaddingScreen"
+    tools:context=".ChooseLocationActivity">
+
+    <LinearLayout
+        android:id="@+id/choose_location_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton style="@style/backButton" />
+
+        <TextView
+            style="@style/customTextView"
+            android:text="Set your location"
+            android:textColor="@color/secondary_black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/choose_location_desc_text"
+        style="@style/customTextView"
+        android:fontFamily="@font/cairo_regular"
+        android:text="This data will be displayed in your account profile for security"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/choose_location_top_layout" />
+
+    <LinearLayout
+        android:id="@+id/via_sms_widget"
+        style="@style/customImageButton"
+        android:orientation="horizontal"
+        android:padding="@dimen/PaddingScreen"
+        app:layout_constraintBottom_toTopOf="@+id/set_location_button">
+
+        <ImageButton
+            style="@style/customSmallImageButton"
+            android:padding="@dimen/MedPadding"
+            android:src="@drawable/ic_location" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/customTextView"
+                android:fontFamily="@font/cairo_regular"
+                android:padding="2dp"
+                android:text="Location" />
+
+            <TextView
+                style="@style/customTextView"
+                android:padding="2dp"
+                android:text="Egypt, Assuit, Manqabad"
+                android:textColor="@color/secondary_black" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_pencil_background"
+            android:padding="@dimen/TextPadding"
+            android:src="@drawable/ic_pencil" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set_location_button"
+        style="@style/customButton"
+        android:text="Set location"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
