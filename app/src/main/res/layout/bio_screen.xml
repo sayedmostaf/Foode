@@ -23,7 +23,7 @@
             style="@style/customTextView"
             android:text="Fill in your bio"
             android:textColor="@color/secondary_black"
-            android:textSize="18dp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
     <TextView

@@ -23,7 +23,7 @@
             style="@style/customTextView"
             android:text="Set your location"
             android:textColor="@color/secondary_black"
-            android:textSize="18dp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
     <TextView
@@ -52,7 +52,7 @@
             android:textColor="@color/secondary_black" />
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         style="@style/customButton"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent" />

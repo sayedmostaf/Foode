@@ -9,7 +9,7 @@
     <style name="Theme.FoodDelivery" parent="Base.Theme.FoodDelivery" />
 
     <style name="FullScreen" parent="Theme.FoodDelivery">
-        <item name="android:statusBarColor">@color/back_ground</item>
+        <item name="android:statusBarColor">@color/clear</item>
         <item name="colorPrimary">@color/primary</item>
     </style>
 

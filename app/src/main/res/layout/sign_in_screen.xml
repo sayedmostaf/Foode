@@ -29,7 +29,7 @@
             android:text="Foode"
             android:textAlignment="center"
             android:textColor="@color/primary"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
@@ -42,9 +42,9 @@
         <TextView
             style="@style/customTextView"
             android:layout_width="wrap_content"
-            android:drawableRight="@drawable/ic_star"
 
-            android:text="Email" />
+            android:text="Email"
+            app:drawableRightCompat="@drawable/ic_star" />
 
         <EditText
             style="@style/customEditText"
@@ -55,12 +55,12 @@
         <TextView
             style="@style/customTextView"
             android:layout_width="wrap_content"
-            android:drawableRight="@drawable/ic_star"
-            android:text="Password" />
+            android:text="Password"
+            app:drawableRightCompat="@drawable/ic_star" />
 
         <EditText
             style="@style/customEditText"
-            android:drawableRight="@drawable/ic_privicay"
+            android:drawableEnd="@drawable/ic_privicay"
             android:hint="Password"
             android:inputType="textPassword"
             android:maxLength="50" />
@@ -96,25 +96,25 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/custom_widget_background"
-                android:drawableLeft="@drawable/ic_facebook"
                 android:elevation="2dp"
                 android:fontFamily="@font/cairo_semi_bold"
                 android:text="Facebook"
                 android:textAlignment="center"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                app:drawableLeftCompat="@drawable/ic_facebook" />
 
             <TextView
                 style="@style/customTextView"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/custom_widget_background"
-                android:drawableLeft="@drawable/ic_google"
                 android:elevation="2dp"
                 android:fontFamily="@font/cairo_semi_bold"
                 android:text="Google"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:drawableLeftCompat="@drawable/ic_google" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:text="Already have an account?"
                 android:textAlignment="center"
-                android:textSize="12dp" />
+                android:textSize="12sp" />
 
             <TextView
                 style="@style/customTextView"

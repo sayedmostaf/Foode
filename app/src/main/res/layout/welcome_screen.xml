@@ -5,17 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WelcomeActivity">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/bg_falafel" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="@dimen/PaddingScreen"
         app:layout_constraintBottom_toBottomOf="parent">
+
         <TextView
             android:id="@+id/restaurant_name"
             android:layout_width="match_parent"
@@ -26,6 +29,7 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="18sp" />
+
         <TextView
             android:id="@+id/description_text"
             android:layout_width="match_parent"
@@ -35,7 +39,8 @@
             android:text="The best food ordering and delivery app of the century"
             android:textAlignment="center"
             android:textColor="@color/white" />
-        <Button
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/next_button"
             style="@style/customButton"
             android:text="Next"

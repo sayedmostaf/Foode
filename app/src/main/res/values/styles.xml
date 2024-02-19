@@ -13,6 +13,15 @@
         <item name="android:layout_marginStart">5dp</item>
     </style>
 
+    <style name="placeOrderButton" parent="customButton">
+        <item name="android:background">@drawable/place_order_button_style</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="cancelButton" parent="placeOrderButton">
+        <item name="android:background">@drawable/cancel_button_style</item>
+    </style>
+
     <style name="customTextView">
         <item name="android:fontFamily">@font/cairo_bold</item>
         <item name="android:textColor">@color/gray</item>
@@ -71,6 +80,10 @@
         <item name="android:layout_gravity">center</item>
     </style>
 
+    <style name="rectoFood" parent="customSmallImageButton">
+        <item name="android:background">@drawable/custom_pencil_background</item>
+    </style>
+
     <style name="customCheckBox">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -88,5 +101,20 @@
         <item name="android:src">@drawable/ic_arrow_back</item>
     </style>
 
+    <style name="customRatingBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:numStars">5</item>
+        <item name="android:progressTint">@color/primary</item>
+        <item name="android:rating">4</item>
+    </style>
 
+    <style name="buyNowButton" parent="customButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/buy_now_button_style</item>
+        <item name="android:textColor">@color/back_ground</item>
+        <item name="android:paddingStart">35dp</item>
+        <item name="android:paddingEnd">35dp</item>
+    </style>
 </resources>

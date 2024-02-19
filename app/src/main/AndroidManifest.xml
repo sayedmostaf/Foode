@@ -13,6 +13,78 @@
         android:theme="@style/Base.Theme.FoodDelivery"
         tools:targetApi="31">
         <activity
+            android:name=".DeliverToActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".OrderHistoryActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".FavoriteFoodActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".DeleteOrderActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".FoodTypesActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".PopularMenuActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".SelectPaymentMethodActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".ChatListActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".FindFoodActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".OrderDetailsActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".PromotionActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".RateMaleActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".CallingActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".OrderCompletedActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".RateRestaurantActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name=".ChooseLocationActivity"
+            android:exported="false"
+            android:theme="@style/FullScreen" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="false"
             android:theme="@style/FullScreen" />
@@ -49,11 +121,11 @@
             android:exported="false"
             android:theme="@style/FullScreen" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".SignInActivity"
             android:exported="false"
             android:theme="@style/FullScreen" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".SplashActivity"
             android:exported="false"
             android:theme="@style/FullScreen" />
         <activity
@@ -61,7 +133,7 @@
             android:exported="false"
             android:theme="@style/FullScreen" />
         <activity
-            android:name=".ChooseLocationActivity"
+            android:name=".HomeActivity"
             android:exported="true"
             android:theme="@style/FullScreen">
             <intent-filter>

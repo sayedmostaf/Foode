@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:padding="@dimen/PaddingScreen"
+    tools:context=".OrderCompletedActivity">
+
+    <ImageButton style="@style/backButton" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="95dp"
+        app:layout_constraintBottom_toTopOf="@+id/name_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sayed_mostafa" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name_text"
+        style="@style/customTextView"
+        android:text="Thank you!"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/order_completed_text"
+        style="@style/customTextView"
+        android:text="Order completed"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/name_text" />
+
+    <TextView
+        style="@style/customTextView"
+        android:text="Please rate the driver"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/order_completed_rate" />
+
+    <RatingBar
+        android:id="@+id/order_completed_rate"
+        style="@style/customRatingBar"
+        app:layout_constraintBottom_toTopOf="@+id/order_completed_feed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/order_completed_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/MedPadding"
+        app:layout_constraintBottom_toTopOf="@+id/submit_button">
+
+        <include layout="@layout/feed_back_edit_text_style" />
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_button"
+        style="@style/customButton"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

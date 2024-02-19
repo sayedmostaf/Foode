@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/delete_item_style"
+    android:orientation="vertical"
+    android:elevation="15dp"
+    android:padding="@dimen/MedPadding">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete" />
+
+    <TextView
+        style="@style/customTextView"
+        android:text="Are you sure you want to delete this menu?"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/MedPadding">
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/cancelButton"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@color/primary" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/customButton"
+            android:layout_weight="1"
+            android:text="Yes, delete" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:padding="@dimen/TextPadding"
+    tools:context=".PromotionActivity">
+
+    <LinearLayout
+        android:id="@+id/promo_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton style="@style/backButton" />
+
+        <TextView
+            style="@style/customTextView"
+            android:text="Promo"
+            android:textColor="@color/secondary_black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/falafel_promo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/promo_top_layout">
+
+        <include layout="@layout/promo_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pizza_promo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/falafel_promo">
+
+        <include layout="@layout/promo_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:padding="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_promo">
+
+        <include layout="@layout/promo_style" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/customButton"
+        android:text="Checkout"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,10 +8,7 @@
     android:padding="@dimen/PaddingScreen"
     tools:context=".CongratsActivity">
 
-    <Button
-        style="@style/customButton"
-        android:text="Go homepage"
-        app:layout_constraintBottom_toBottomOf="parent" />
+
 
     <ImageView
         android:id="@+id/done_image"
@@ -39,4 +36,8 @@
         android:textColor="@color/secondary_black"
         app:layout_constraintTop_toBottomOf="@+id/congrats_text" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/customButton"
+        android:text="Go homepage"
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

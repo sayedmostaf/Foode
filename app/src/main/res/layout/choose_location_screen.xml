@@ -73,7 +73,7 @@
             android:src="@drawable/ic_pencil" />
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/set_location_button"
         style="@style/customButton"
         android:text="Set location"

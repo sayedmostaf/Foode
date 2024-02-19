@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/special_deal_background"
+    android:orientation="vertical"
+    android:padding="@dimen/MedPadding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/cairo_regular"
+            android:padding="3dp"
+            android:text="Subtotoal"
+            android:textColor="@color/back_ground" />
+
+        <TextView
+            style="@style/customTextView"
+            android:padding="3dp"
+            android:text="$32"
+
+            android:textAlignment="textEnd"
+            android:textColor="@color/back_ground"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_width="wrap_content"
+
+            android:fontFamily="@font/cairo_regular"
+            android:padding="3dp"
+            android:text="Delivery charge"
+            android:textColor="@color/back_ground" />
+
+        <TextView
+            style="@style/customTextView"
+            android:padding="3dp"
+            android:text="$5"
+
+            android:textAlignment="textEnd"
+            android:textColor="@color/back_ground"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/cairo_regular"
+
+            android:padding="3dp"
+            android:text="Discount"
+            android:textColor="@color/back_ground" />
+
+        <TextView
+            style="@style/customTextView"
+            android:padding="3dp"
+            android:text="$10"
+
+            android:textAlignment="textEnd"
+            android:textColor="@color/back_ground"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/back_ground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/cairo_regular"
+
+            android:padding="3dp"
+            android:text="Total"
+            android:textColor="@color/back_ground" />
+
+        <TextView
+            style="@style/customTextView"
+            android:padding="3dp"
+            android:text="$27"
+
+            android:textAlignment="textEnd"
+            android:textColor="@color/back_ground"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/placeOrderButton"
+        android:text="Place my order" />
+
+
+</LinearLayout>

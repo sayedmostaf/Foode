@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    style="@style/customImageButton"
+    android:padding="10dp">
+
+    <ImageButton
+        style="@style/rectoFood"
+        android:src="@drawable/ic_meal" />
+
+    <TextView
+        style="@style/customTextView"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Lovy Food"
+        android:textColor="@color/secondary_black" />
+
+    <TextView
+        style="@style/customTextView"
+        android:text="10 mins"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+</LinearLayout>

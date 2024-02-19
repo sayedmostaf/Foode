@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:padding="@dimen/PaddingScreen"
+    tools:context=".RateMaleActivity">
+
+    <ImageButton style="@style/backButton" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="95dp"
+        app:layout_constraintBottom_toTopOf="@+id/enjoy_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@color/primary"
+            android:src="@drawable/img_falafel" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/enjoy_text"
+        style="@style/customTextView"
+        android:text="Enjoy your meal !"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/customTextView"
+        android:text="Please rate the menu"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/enjoy_rate" />
+    <RatingBar
+        android:id="@+id/enjoy_rate"
+        style="@style/customRatingBar"
+        app:layout_constraintBottom_toTopOf="@+id/enjoy_meal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:id="@+id/enjoy_meal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/MedPadding"
+        app:layout_constraintBottom_toTopOf="@+id/rate_submit_button">
+
+        <include layout="@layout/feed_back_edit_text_style" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/rate_submit_button"
+        style="@style/customButton"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -97,7 +97,7 @@
             app:layout_constraintBottom_toTopOf="@+id/pin_code_layout" />
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         style="@style/customButton"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent" />

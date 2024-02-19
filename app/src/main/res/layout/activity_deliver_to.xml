@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    android:padding="@dimen/PaddingScreen"
+    tools:context=".DeliverToActivity">
+
+    <LinearLayout
+        android:id="@+id/Deliver_to_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton style="@style/backButton" />
+
+
+        <TextView
+            style="@style/customTextView"
+            android:text="Deliver to"
+            android:textColor="@color/secondary_black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/home_widget"
+        style="@style/customImageButton"
+        android:orientation="horizontal"
+        android:padding="@dimen/PaddingScreen"
+        app:layout_constraintTop_toBottomOf="@+id/Deliver_to_top_layout">
+
+        <ImageButton
+            style="@style/customSmallImageButton"
+            android:padding="25dp"
+            android:src="@drawable/ic_location" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/customTextView"
+                android:fontFamily="@font/cairo_regular"
+                android:padding="5dp"
+                android:text="Home" />
+
+            <TextView
+                style="@style/customTextView"
+                android:padding="5dp"
+                android:text="Bung Tomo St. 109"
+                android:textColor="@color/secondary_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/office_widget"
+        style="@style/customImageButton"
+        android:orientation="horizontal"
+        android:padding="@dimen/PaddingScreen"
+        app:layout_constraintTop_toBottomOf="@+id/home_widget">
+
+        <ImageButton
+            style="@style/customSmallImageButton"
+            android:padding="25dp"
+            android:src="@drawable/ic_location" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/customTextView"
+                android:fontFamily="@font/cairo_regular"
+                android:padding="5dp"
+                android:text="Office" />
+
+            <TextView
+                style="@style/customTextView"
+                android:padding="5dp"
+                android:text="Mayjen Sungkono St. 55"
+                android:textColor="@color/secondary_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/place_order_style" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -51,7 +51,7 @@
         android:src="@drawable/ic_payoneer"
         app:layout_constraintTop_toBottomOf="@id/visa_widget" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         style="@style/customButton"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent" />

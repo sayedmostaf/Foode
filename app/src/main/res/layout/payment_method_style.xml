@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_widget_background"
+    android:gravity="center"
+    android:elevation="3dp"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="10dp"
+    android:padding="@dimen/TextPadding"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_paypal" />
+
+    <TextView
+        style="@style/customTextView"
+        android:text="+109*****01"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black" />
+</LinearLayout>
