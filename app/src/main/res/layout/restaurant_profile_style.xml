@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/delete_item_style"
+    android:elevation="3dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <TextView
+        style="@style/customTextView"
+        android:text="Lovy Food Restaurant"
+        android:textColor="@color/secondary_black"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/back_ground"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                style="@style/customSmallImageButton"
+                android:padding="10dp"
+                android:src="@drawable/ic_location_small" />
+
+            <TextView
+                style="@style/customTextView"
+                android:text="3 km"
+                android:textSize="12sp" />
+
+            <ImageButton
+                style="@style/customSmallImageButton"
+
+                android:padding="10dp"
+                android:src="@drawable/ic_half_star_primary" />
+
+            <TextView
+                style="@style/customTextView"
+                android:text="4.8 rating"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/customTextView"
+        android:text="We are one of the best restaurants in the city of Assuit with years of experience. Weserve a lot of quality food cooked directly by professional chefs. Hope you like it!"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_weight="1"
+            android:text="Popular Menu"
+            android:textColor="@color/secondary_black" />
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_width="wrap_content"
+            android:text="see all"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbHorizontal="@color/back_ground">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include layout="@layout/price_menu_style" />
+
+            <include layout="@layout/price_menu_style" />
+
+            <include layout="@layout/price_menu_style" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_weight="1"
+            android:text="Testimonials"
+            android:textColor="@color/secondary_black" />
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_width="wrap_content"
+            android:text="see all"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+
+    <include layout="@layout/test_item_style" />
+</LinearLayout>

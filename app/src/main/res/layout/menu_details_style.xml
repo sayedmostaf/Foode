@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/delete_item_style"
+    android:elevation="3dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/gold_member_style"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/MedPadding"
+            android:paddingVertical="3dp"
+            android:text="Member Gold"
+            android:textColor="@color/yellow" />
+
+        <ImageButton
+            style="@style/customSmallImageButton"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_location_small"
+            app:layout_constraintRight_toLeftOf="@+id/heart" />
+
+        <ImageButton
+            android:id="@+id/heart"
+            style="@style/customSmallImageButton"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_heart_small"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/back_ground"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/customTextView"
+            android:padding="1dp"
+            android:text="Original Salad"
+            android:textColor="@color/secondary_black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                style="@style/customSmallImageButton"
+                android:padding="10dp"
+                android:src="@drawable/ic_location_small" />
+
+            <TextView
+                style="@style/customTextView"
+                android:text="3 km"
+                android:textSize="12sp" />
+
+            <ImageButton
+                style="@style/customSmallImageButton"
+
+                android:padding="10dp"
+                android:src="@drawable/ic_half_star_primary" />
+
+            <TextView
+                style="@style/customTextView"
+                android:text="4.8 rating"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/customTextView"
+        android:text="Yummie and lexat original salad made directly by our professional chef. Consists of a variety of selected quality vegetables and fruits:\nKale\nSpinach\nMelon\nStrawberry\nlettuce\nCucmber
+\nServed warmly for you. We also have extra seasoning for\nyou to enjoy. Hope you like it"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_weight="1"
+            android:text="Testimonials"
+            android:textColor="@color/secondary_black" />
+
+        <TextView
+            style="@style/customTextView"
+            android:layout_width="wrap_content"
+            android:text="see all"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/test_item_style" />
+
+        <include layout="@layout/test_item_style" />
+
+    </LinearLayout>
+</LinearLayout>
